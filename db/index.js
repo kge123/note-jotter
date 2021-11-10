@@ -29,7 +29,20 @@ class Notes{
      });
  }
 
- 
+ writeNotes(notes){
+     const {title, text }=notes;
+
+     //create an  if statement that if the title and text are blank it throws a new error to let the user know that those fields cannot be blank
+
+     //we need to create a new note with a unique ID
+
+     const newNotes = {title, text, id: uuid()}
+
+     //get all notes, add the new note to the note array, and write all the notes
+     return this.readNotes().then((notes)=> [...notes, newNotes]).then((updated)=> this.write(updated));
+ }
+
+ ///create a function that takes in an id. you have to get all the notes and filter the note by the one with the id. then write the notes all over again.
 
 }
 

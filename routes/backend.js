@@ -11,4 +11,18 @@ router.get("/notes", (req, res) => {
     .catch((err) => res.json(err));
 });
 
+//create a route that posts the new note
+
+router.post("/notes", (req, res) => {
+  db.writeNotes(req.body)
+    .then((data) => {
+      return res.json(data);
+    })
+    .catch((err) => res.json(err));
+});
+
+//create route to delete the note. hint make sure you use req.params... 
+
+
+
 module.exports = router;
