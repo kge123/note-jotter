@@ -21,8 +21,8 @@ router.post("/notes", (req, res) => {
     .catch((err) => res.json(err));
 });
 
-//create route to delete the note. hint make sure you use req.params... 
-
-
-
+//create route to delete the note. hint make sure you use req.params...
+// router.delete(:title, :text, (req,res) => {
+//   db.deleteNotes(req.params)
+// })
 module.exports = router;
