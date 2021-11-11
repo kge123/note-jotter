@@ -19,9 +19,10 @@ Run 'npm start' within the terminal and localhost:3001 will appear in the termin
 
 When on the initial page click 'Get Started' and this will take you to your next page where you are able to add and save notes with a title and text written. Without one or the other it will not save 
 
-## **Deployed App**
+## **Deployed**
 
-https://git.heroku.com/pacific-crag-86545.git
+https://pacific-crag-86545.herokuapp.com/
+
 
 ## **Contributing**
 
